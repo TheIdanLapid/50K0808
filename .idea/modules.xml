@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IntermediateWarehouse.iml" filepath="$PROJECT_DIR$/IntermediateWarehouse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/Jersey/Jersey.iml" filepath="$PROJECT_DIR$/src/Jersey/Jersey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/JerseyClient/JerseyClient.iml" filepath="$PROJECT_DIR$/src/JerseyClient/JerseyClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/src/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/Servers/Servers.iml" filepath="$PROJECT_DIR$/src/Servers/Servers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/SokobanClient/SokobanClient.iml" filepath="$PROJECT_DIR$/src/SokobanClient/SokobanClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/SolverTester/SolverTester.iml" filepath="$PROJECT_DIR$/src/SolverTester/SolverTester.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/sokoban_Idan%Shdema/sokoban_Idan%Shdema.iml" filepath="$PROJECT_DIR$/src/sokoban_Idan%Shdema/sokoban_Idan%Shdema.iml" />
+    </modules>
+  </component>
+</project>

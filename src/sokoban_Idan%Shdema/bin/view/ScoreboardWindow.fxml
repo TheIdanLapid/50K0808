@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ScoreboardWindowController">
+   <children>
+      <TableView fx:id="table" layoutX="186.0" layoutY="84.0" prefHeight="416.0" prefWidth="395.0">
+        <columns>
+          <TableColumn fx:id="user" editable="false" prefWidth="100.0" sortable="false" text="User ID" />
+          <TableColumn fx:id="level" editable="false" prefWidth="100.0" text="Level Name" />
+          <TableColumn fx:id="steps" editable="false" prefWidth="100.0" text="Steps" />
+          <TableColumn fx:id="time" editable="false" prefWidth="100.0" text="Time" />
+        </columns>
+      </TableView>
+      <VBox focusTraversable="true" layoutX="27.0" layoutY="167.0" prefHeight="251.0" prefWidth="142.0">
+         <children>
+            <Label text="Search by:" textFill="#118653">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="ID:" textFill="#118653">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userID" prefHeight="25.0" prefWidth="142.0" />
+            <Button mnemonicParsing="false" onAction="#searchID" text="search" />
+            <Label alignment="TOP_LEFT" text="Level Name:" textFill="#118653">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="levelName" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="142.0" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#searchLevel" text="search" />
+         </children>
+      </VBox>
+      <Label layoutX="289.0" layoutY="22.0" text="Scoreboard" textFill="#118653">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button alignment="TOP_LEFT" layoutX="238.0" layoutY="524.0" mnemonicParsing="false" onAction="#mainScoreboard" text="back to main scoreboard" />
+      <Button alignment="TOP_LEFT" layoutX="438.0" layoutY="524.0" mnemonicParsing="false" onAction="#backToGame" text="back to game" />
+   </children>
+</Pane>

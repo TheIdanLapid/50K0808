@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import view.SokobanDisplayer?>
+
+<BorderPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainWindowController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#openFile" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveFile" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#muteMusic" text="Mute" />
+          		  <MenuItem mnemonicParsing="false" onAction="#exitGame" text="Exit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+<SokobanDisplayer fx:id="sokobanDisplayer" bobLeftFileName="./resources/bobleft.png" bobRightFileName="./resources/bobright.png" boxFileName="./resources/heart.png" boxOnStarFileName="./resources/aliceheart.png" charFileName="./resources/bob.png" charOnStarFileName="./resources/bobonalice.png" height="550.0" starFileName="./resources/alice.png" wallFileName="./resources/wall2.jpg" width="530.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="30.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Status: " />
+            <Label text="     Steps: " />
+            <Label fx:id="steps" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="20.0" text="Steps: ">
+            </Label>
+            <Label text="       " />
+            <Label fx:id="clock" prefHeight="25.0" prefWidth="118.0">
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <right>
+      <VBox focusTraversable="false" prefHeight="550.0" prefWidth="64.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button focusTraversable="false" fx:id="solution" mnemonicParsing="false" onAction="#solution" prefHeight="25.0" prefWidth="98.0" text="Solution" />
+            <Button focusTraversable="false" fx:id="hint" mnemonicParsing="false" onAction="#hint" prefHeight="25.0" prefWidth="97.0" text="Hint" />
+         </children>
+         <padding>
+            <Insets top="240.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>
