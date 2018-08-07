@@ -16,6 +16,6 @@ name="connection.url">jdbc:sqlserver://localhost:1433;database=Sokoban;integrate
  <mapping class="model.db.ScorePK"></mapping>
  </session-factory>
 </hibernate-configuration>
-<!-- Run Configurations... -->
-<!-- VM arguments: -->
-<!-- -Djava.library.path="C:\JDBC\sqljdbc_6.0\enu\auth\x64" -->
+        <!-- Run Configurations... -->
+        <!-- VM arguments: -->
+        <!-- -Djava.library.path="C:\Users\Eon\IdeaProjects\IntermediateWarehouse\JDBC\sqljdbc_6.0\enu\auth\x64" -->
